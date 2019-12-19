@@ -23,3 +23,7 @@ Recommendation](https://arxiv.org/pdf/1905.07854.pdf)
 * [Graph Embedding Based Hybrid Social
 Recommendation System](https://arxiv.org/pdf/1908.09454.pdf)
 ![GraphEmb](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/Graph-embedding.JPG)
+
+* Alternating Least Square
+
+* Factor Machines 
