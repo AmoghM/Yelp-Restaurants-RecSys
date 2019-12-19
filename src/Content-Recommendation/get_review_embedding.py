@@ -32,7 +32,6 @@ def get_top_business_reviews(business_reviews, review_weight):
 
 def get_agg_business_reviews():
     print("==Reading business dataset==")
-    reviews_emb, ids, ids_to_num, count = [], [], {}, 0
     bid_to_num = {}
     business_reviews = {}
     review_weight = {}
@@ -55,15 +54,6 @@ def get_agg_business_reviews():
     business_reviews = get_top_business_reviews(business_reviews, review_weight)
     return business_reviews, review_weight, bid_to_num
 
-# business_reviews, review_weight, bid_to_num = get_agg_business_reviews()
-# embeddings = model.encode(business_reviews, bsize=128, tokenize=False, verbose=True)
-# print('nb sentences encoded : {0}'.format(len(embeddings)))
-
-# for k,v in business_reviews.items():
-#     print(k)
-#     embeddings = model.encode(v, bsize=128, tokenize=False, verbose=True)
-#     print('nb sentences encoded : {0}'.format(len(embeddings)))
-
 
 def get_business_embedding():
     print("==Preparing business embedding==")
@@ -76,7 +66,6 @@ def get_business_embedding():
         for bid, reviews in business_reviews.items():
             print(count)
             embeddings = model.encode(reviews, bsize=128, tokenize=False, verbose=True)
-            # print('nb sentences encoded : {0}'.format(len(embeddings)))
             normalized_weighted_embdding = get_weighted_embedding(embeddings,review_weight[bid])
             fw.write(str(bid_to_num[bid])+"\t"+ str(normalized_weighted_embdding)+"\n")
             # business_embedding.append((bid_to_num[bid],normalized_weighted_embdding))
@@ -96,10 +85,6 @@ def get_weighted_embedding(review_embedding, review_weights):
     weighted_emb = weighted_emb / total
     return  weighted_emb.tolist()
 
-# def cosine(u, v):
-#     return np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))
-#
-# print(cosine(model.encode(['mexican is go food'])[0], model.encode(['Tacos is delicious.'])[0]))
 
 if __name__=="__main__":
     get_business_embedding()
