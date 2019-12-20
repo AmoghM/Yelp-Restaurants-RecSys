@@ -44,3 +44,7 @@ Recommendation System](https://arxiv.org/pdf/1908.09454.pdf)
 ![ALS](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/ALS.png)
 * Factor Machines 
 ![FM](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/Factorization-Machine.png)
+
+
+### Team
+![team](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/team.jpeg)
