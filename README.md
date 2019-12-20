@@ -4,7 +4,19 @@ a) Pre-run step:
 * Install packages and dependencies: `pip install -r requirements.txt`
 * Download Yelp dataset from here: https://www.yelp.com/dataset/challenge
 * Place the extracted folder into the `data/` of the repository
+* Run `Data_Pre_Processing.ipynb` from `src` folder. This will create the relevant datasets necessary to run the models we have defined 
 
+b) For Bias Baseline and ALS model:
+* Run src/ALS_Baseline.ipynb
+
+b) For Bias Baseline and ALS model:
+* Run src/ALS_Baseline.ipynb
+
+c) For Factorization Machine model:
+* Run src/CMF_FM.ipynb
+
+d) For Wide and Deep model:
+* Run src/Wide and Deep.ipynb
 
 ### Models Used:
 * [Wide and Deep Recommendation System](https://arxiv.org/pdf/1606.07792.pdf)
