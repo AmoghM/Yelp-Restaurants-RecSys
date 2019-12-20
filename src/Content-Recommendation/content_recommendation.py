@@ -64,4 +64,3 @@ if __name__=='__main__':
     add_annoy_index(path)
     get_recommendation("This was the best pizza place ever")
     get_recommendation("Worst ambience ever. Never go to this place")
-    get_recommendation("Indian food")
