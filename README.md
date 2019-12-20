@@ -47,4 +47,5 @@ Recommendation System](https://arxiv.org/pdf/1908.09454.pdf)
 
 
 ### Team
+L-R: Benjamin, Siddhant, Swarna and Amogh
 ![team](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/team.jpeg)
