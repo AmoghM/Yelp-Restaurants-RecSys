@@ -40,7 +40,7 @@ Recommendation](https://arxiv.org/pdf/1905.07854.pdf)
 Recommendation System](https://arxiv.org/pdf/1908.09454.pdf)
 ![GraphEmb](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/Graph-embedding.JPG)
 
-* Alternating Least Square
+* [Alternating Least Square](https://dl.acm.org/citation.cfm?id=1608614)
 ![ALS](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/ALS.png)
 * Factor Machines 
 ![FM](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/Factorization-Machine.png)
