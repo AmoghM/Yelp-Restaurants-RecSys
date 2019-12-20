@@ -1,4 +1,4 @@
-### Step to follow for recommendation on Yelp dataset
+### Steps to follow for recommendation on Yelp dataset
 a) Pre-run step:
 * Clone the repository
 * Install packages and dependencies: `pip install -r requirements.txt`
