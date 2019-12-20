@@ -46,7 +46,7 @@ def get_num_to_bid(bid_to_json):
         n_to_b[j]=i
     return n_to_b
 
-def load_data(reviews):
+def get_recommendation(reviews):
     an = AnnoyIndex(4096, 'angular')
     an.load('../../model/business.ann')
     bid_to_json = json.load(open('../../data/bid.json'))
@@ -61,6 +61,7 @@ def load_data(reviews):
 
 if __name__=='__main__':
     path = '../../output/review_embedding.txt'
-    add_annoy_index(path)
-    load_data("This was the best pizza place ever")
-    load_data("Worst ambience ever. Never go to this place")
+    # add_annoy_index(path)
+    get_recommendation("This was the best pizza place ever")
+    get_recommendation("Worst ambience ever. Never go to this place")
+    get_recommendation("Indian food")
