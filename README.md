@@ -15,6 +15,13 @@ c) For Factorization Machine model:
 d) For Wide and Deep model:
 * Run `src/Wide and Deep.ipynb`
 
+e) For Content-based recommendation:
+* Download glove, infersent model mentioned here: https://github.com/facebookresearch/InferSent
+* Move the `infersent2.pkl` to `src/Content-Recommendation`
+* Run `python src/json_to_csv.py` to convert json to csv consisting of Las Vegas restaurant dataset for 2018.
+* Run `python src/Content-Recommendation/get_review_embedding.py` to generate weighted review2vec and export it to a file.
+* Run `python src/Content-Recommendation/content_recommendation.py` to create annoy index from review embeddings and provide top 10 recommendations for the input string.
+
 ### Models Used:
 * [Wide and Deep Recommendation System](https://arxiv.org/pdf/1606.07792.pdf)
 ![Wide and Deep Recommendation model](https://github.com/AmoghM/Yelp-Restaurants-RecSys/blob/master/images/wide-deep-collage.png)
